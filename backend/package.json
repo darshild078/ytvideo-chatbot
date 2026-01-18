@@ -1,0 +1,37 @@
+{
+    "name": "youtube-rag-backend",
+    "version": "1.0.0",
+    "description": "YouTube RAG Chatbot Backend API",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "node --max-old-space-size=4096 node_modules/tsx/dist/cli.mjs watch src/index.ts",
+        "build": "tsc",
+        "start": "node --max-old-space-size=4096 dist/index.js",
+        "lint": "eslint src --ext .ts"
+    },
+    "dependencies": {
+        "@pinecone-database/pinecone": "^3.0.3",
+        "axios": "^1.7.7",
+        "bull": "^4.16.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.1",
+        "groq-sdk": "^0.8.0",
+        "mongoose": "^8.8.3",
+        "socket.io": "^4.8.1",
+        "uuid": "^11.0.3",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/bull": "^4.10.0",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.9.1",
+        "@types/uuid": "^10.0.0",
+        "@typescript-eslint/eslint-plugin": "^8.15.0",
+        "@typescript-eslint/parser": "^8.15.0",
+        "eslint": "^8.57.1",
+        "tsx": "^4.19.2",
+        "typescript": "^5.6.3"
+    }
+}
