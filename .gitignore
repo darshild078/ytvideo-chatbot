@@ -50,3 +50,6 @@ coverage/
 *.tmp
 *.temp
 .cache/
+
+# README assets (images for documentation)
+.readme-assets/
